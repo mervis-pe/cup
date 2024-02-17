@@ -3,13 +3,19 @@ body {
     margin: 0;
     padding: 0;
 }
-
-header {
+header{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;;
+}
+header .cabecera{
+    width: 75%;
+}
+header .cabecera .contenedor {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     color:black;
-    padding: 10px 20px;
+    padding: 10px 0px;
 }
 nav ul {
     margin: 0;
@@ -89,7 +95,7 @@ footer{
     color: white;
 }
 footer .contenedor{
-    width: 80%;
+    width: 75%;
     display: flex;
     flex-direction: column;
 }
