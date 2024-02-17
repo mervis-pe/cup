@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:black;
+    padding: 10px 20px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+  
+nav ul li {
+    float: left;
+}
+  
+nav ul li a {
+    display: block;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold; /* Añade negrita a las letras */
+    position: relative;
+}
+
+nav ul li a:hover{
+    color:#a1a1a1;
+}
+.animacion::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #000000;
+    transition: width 0.3s ease; /* Transición animada */
+}
+  
+.animacion:hover::after {
+    width: 100%; /* Ancho completo al pasar el ratón */
+}
+
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Agregar sombra al menú */
+    column-count: 2; /* Aquí establecemos el número de columnas */
+    column-gap: 20px; /* Espacio entre columnas */
+    width: auto; /* Ancho del menú desplegable */
+}
+  
+.dropdown-content li {    
+    display: block;
+    margin-top: 10px;
+    clear: both;
+}
+  
+.dropdown-content li a {
+    display: block;
+    padding: 5px;
+    color:black;
+    text-decoration: none;
+}
+  
+.dropdown-content li a:hover {
+    color:#a1a1a1;
+}
